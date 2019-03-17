@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Export PDF example</title>
+  <link rel="stylesheet" href="https://openlayers.org/en/v5.3.0/css/ol.css" type="text/css">
+  <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
+  <style>
+    .map {
+      width: 842px;
+      height: 595px;
+    }
+
+    .tooltip {
+      position: relative;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+      color: white;
+      padding: 4px 8px;
+      opacity: 0.7;
+      white-space: nowrap;
+    }
+
+    .tooltip-measure {
+      opacity: 1;
+      font-weight: bold;
+    }
+
+    .tooltip-static {
+      background-color: #ffcc33;
+      color: black;
+      border: 1px solid white;
+    }
+
+    .tooltip-measure:before,
+    .tooltip-static:before {
+      border-top: 6px solid rgba(0, 0, 0, 0.5);
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      margin-left: -7px;
+      left: 50%;
+    }
+
+    .tooltip-static:before {
+      border-top-color: #ffcc33;
+    }
+  </style>
+</head>
+<body>
+<div class="row-fluid">
+  <div class="span12">
+    <div id="map" class="map"></div>
+  </div>
+</div>
+<form class="form">
+  <label>Page size </label>
+  <select id="format">
+    <option value="a0">A0 (slow)</option>
+    <option value="a1">A1</option>
+    <option value="a2">A2</option>
+    <option value="a3">A3</option>
+    <option value="a4" selected>A4</option>
+    <option value="a5">A5 (fast)</option>
+  </select>
+  <label>Resolution </label>
+  <select id="resolution">
+    <option value="72">72 dpi (fast)</option>
+    <option value="150">150 dpi</option>
+    <option value="300">300 dpi (slow)</option>
+  </select>
+</form>
+<button id="export-pdf">Export PDF</button>
+<form class="form-inline">
+  <label>Measurement type &nbsp;</label>
+  <select id="type">
+    <option value="length">Length (LineString)</option>
+    <option value="area">Area (Polygon)</option>
+  </select>
+</form>
+<button id="goRight">-></button>
+<button id="goLeft"><-</button>
+<button id="goUp">/\</button>
+<button id="goDown">\/</button>
+<button id="setStyle">setStyle</button>
+<script src="../assets/geo.bundle.js"></script>
+<script>
+  let map;
+  init();
+
+  async function init() {
+    map = new gisApi();
+
+    map.addFeature();
+    map.extent();
+
+
+    const exportButton = document.getElementById('export-pdf');
+
+    exportButton.addEventListener('click', map.print, false);
+
+
+    const goRight = document.getElementById('goRight');
+    const goLeft = document.getElementById('goLeft');
+    const goUp = document.getElementById('goUp');
+    const goDown = document.getElementById('goDown');
+
+    goRight.addEventListener('click', map.goRight, false);
+    goLeft.addEventListener('click', map.goLeft, false);
+    goUp.addEventListener('click', map.goUp, false);
+    goDown.addEventListener('click', map.goDown, false);
+
+    const setStyle = document.getElementById('setStyle');
+    setStyle.addEventListener('click', map.setStyle, false);
+  }
+
+</script>
+
+</body>
+</html>
