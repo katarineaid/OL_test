@@ -86,6 +86,9 @@
 <button id="goUp">/\</button>
 <button id="goDown">\/</button>
 <button id="setStyle">setStyle</button>
+
+<button id="landscape">landscape</button>
+<button id="vertical">vertical</button>
 <script src="../assets/geo.bundle.js"></script>
 <script>
   let map;
@@ -115,6 +118,12 @@
 
     const setStyle = document.getElementById('setStyle');
     setStyle.addEventListener('click', map.setStyle, false);
+
+    const landscape = document.getElementById('landscape');
+    landscape.addEventListener('click', map.landscape, false);
+
+    const vertical = document.getElementById('vertical');
+    vertical.addEventListener('click', map.vertical, false);
   }
 
 </script>

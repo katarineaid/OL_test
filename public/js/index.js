@@ -29,6 +29,32 @@ class Map extends AbstractMap {
     this.goDown = this.goDown.bind(this);
     this.getStyle = this.getStyle.bind(this);
     this.setStyle = this.setStyle.bind(this);
+    this.landscape = this.landscape.bind(this);
+    this.vertical = this.vertical.bind(this);
+  }
+
+  landscape() {
+    const self = this;
+    const resolution = 72
+    let width = Math.round(297 * resolution / 25.4);
+    let height = Math.round(210 * resolution / 25.4);
+
+    const printSize = [width, height];
+    const extent = self.map.getView().calculateExtent(printSize);
+    self.map.setSize(printSize);
+    self.map.getView().fit(extent, { size: printSize });
+  }
+
+  vertical() {
+    const self = this;
+    const resolution = 72
+    let width = Math.round(210 * resolution / 25.4);
+    let height = Math.round(297 * resolution / 25.4);
+
+    const printSize = [width, height];
+    const extent = self.map.getView().calculateExtent(printSize);
+    self.map.setSize(printSize);
+    self.map.getView().fit(extent, { size: printSize });
   }
 
   getStyle() {
@@ -175,7 +201,7 @@ class Map extends AbstractMap {
     this.map.addLayer(vectorLayer);
   };
 
-  setStyle(){
+  setStyle() {
     const self = this;
     self.vectorLayer.setStyle(this.getStyle());
   }
