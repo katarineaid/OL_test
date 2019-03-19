@@ -65,8 +65,8 @@ class Map extends AbstractMap {
         let length = feature.get('speed'); // in pixel
         let pointFrom = feature.getGeometry().getCoordinates();
         let pointTo = [
-          pointFrom[0] + length * resolution,
-          pointFrom[1] + length * resolution
+          pointFrom[0] ,
+          pointFrom[1]+ length * resolution
         ];
         let line = new LineString([
           pointTo,
