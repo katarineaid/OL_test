@@ -1,0 +1,70 @@
+.class_default {
+  stroke: #000;
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_white {
+  stroke: #fff;
+  fill: #fff;
+  stroke-width: 1;
+}
+.class_critical {
+  stroke: #f00;
+  fill: none;
+  stroke-width: 1;
+}
+
+.class_critical_polygon {
+  stroke: #f00;
+  fill: #f00;
+  stroke-width: 1;
+}
+
+.class_unsatisfactory {
+  stroke: #FFC000;
+  fill: none;
+  stroke-width: 1;
+}
+
+.class_unsatisfactory_polygon {
+  stroke: #FFC000;
+  fill: #FFC000;
+  stroke-width: 1;
+}
+
+.class_satisfactory {
+  stroke: #ff0;
+  fill: none;
+  stroke-width: 1;
+}
+
+.class_satisfactory_polygon {
+  stroke: #ff0;
+  fill: #ff0;
+  stroke-width: 1;
+}
+
+.class_good {
+  stroke: #92D050;
+  fill: none;
+  stroke-width: 1;
+}
+
+.class_good_polygon {
+  stroke: #92D050;
+  fill: #92D050;
+  stroke-width: 1;
+}
+
+.class_very_good {
+  stroke: #00B050;
+  fill: none;
+  stroke-width: 1;
+}
+
+.class_very_good_polygon {
+  stroke: #00B050;
+  fill: #00B050;
+  stroke-width: 1;
+}

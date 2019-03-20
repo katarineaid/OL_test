@@ -1,0 +1,237 @@
+.class_default {
+  stroke: #000;
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_white {
+  stroke: #fff;
+  fill: #fff;
+  stroke-width: 1;
+}
+
+.class_1150 {
+  stroke: rgba(205, 138, 255, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_800 {
+  stroke: rgba(0, 0, 168, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_750 {
+  stroke: rgba(0, 0, 168, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_500 {
+  stroke: rgba(213, 0, 0, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_400 {
+  stroke: rgba(255, 100, 30, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_330 {
+  stroke: rgba(0, 170, 0, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_220 {
+  stroke: rgba(181, 181, 0, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_150 {
+  stroke: rgba(170, 150, 0, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_110 {
+  stroke: rgba(0, 153, 255, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_60 {
+  stroke: rgba(255, 51, 204, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_35 {
+  stroke: rgba(102, 51, 0, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_20 {
+  stroke: rgba(160, 32, 240, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_15 {
+  stroke: rgba(160, 32, 240, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_10 {
+  stroke: rgba(102, 0, 240, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_6 {
+  stroke: rgba(0, 102, 0, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_3 {
+  stroke: rgba(0, 102, 0, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_0_4 {
+  stroke: rgba(127, 127, 127, 1);
+  stroke-width: 1;
+  fill: none;
+}
+
+.class_0 {
+  stroke: #000;
+  stroke-width: 1;
+  fill: none;
+}
+.class_default {
+  stroke: #000;
+  stroke-width: 1;
+  fill: none;
+}
+.class_default_polygon {
+  stroke: #000;
+  stroke-width: 1;
+  fill: #000;
+}
+
+.class_1150_polygon {
+  stroke: rgba(205, 138, 255, 1);
+  stroke-width: 1;
+  fill: rgba(205, 138, 255, 1);
+}
+
+.class_800_polygon {
+  stroke: rgba(0, 0, 168, 1);
+  fill: rgba(0, 0, 168, 1);
+  stroke-width: 1;
+}
+
+.class_750 {
+  stroke: rgba(0, 0, 168, 1);
+  fill: rgba(0, 0, 168, 1);
+  stroke-width: 1;
+}
+
+.class_500_polygon {
+  stroke: rgba(213, 0, 0, 1);
+  fill: rgba(213, 0, 0, 1);
+  stroke-width: 1;
+}
+
+.class_400_polygon {
+  stroke: rgba(255, 100, 30, 1);
+  fill: rgba(255, 100, 30, 1);
+  stroke-width: 1;
+}
+
+.class_330_polygon {
+  stroke: rgba(0, 170, 0, 1);
+  fill: rgba(0, 170, 0, 1);
+  stroke-width: 1;
+}
+
+.class_220_polygon {
+  stroke: rgba(181, 181, 0, 1);
+  fill: rgba(181, 181, 0, 1);
+  stroke-width: 1;
+}
+
+.class_150_polygon {
+  stroke: rgba(170, 150, 0, 1);
+  fill: rgba(170, 150, 0, 1);
+  stroke-width: 1;
+}
+
+.class_110_polygon {
+  stroke: rgba(0, 153, 255, 1);
+  fill: rgba(0, 153, 255, 1);
+  stroke-width: 1;
+}
+
+.class_60_polygon {
+  stroke: rgba(255, 51, 204, 1);
+  fill: rgba(255, 51, 204, 1);
+  stroke-width: 1;
+}
+
+.class_35_polygon {
+  stroke: rgba(102, 51, 0, 1);
+  fill: rgba(102, 51, 0, 1);
+  stroke-width: 1;
+}
+
+.class_20_polygon {
+  stroke: rgba(160, 32, 240, 1);
+  fill: rgba(160, 32, 240, 1);
+  stroke-width: 1;
+}
+
+.class_15_polygon {
+  stroke: rgba(160, 32, 240, 1);
+  fill: rgba(160, 32, 240, 1);
+  stroke-width: 1;
+}
+
+.class_10_polygon {
+  stroke: rgba(102, 0, 240, 1);
+  fill: rgba(102, 0, 240, 1);
+  stroke-width: 1;
+}
+
+.class_6_polygon {
+  stroke: rgba(0, 102, 0, 1);
+  fill: rgba(0, 102, 0, 1);
+  stroke-width: 1;
+}
+
+.class_3_polygon {
+  stroke: rgba(0, 102, 0, 1);
+  fill: rgba(0, 102, 0, 1);
+  stroke-width: 1;
+}
+
+.class_0_4_polygon {
+  stroke: rgba(127, 127, 127, 1);
+  fill: rgba(127, 127, 127, 1);
+  stroke-width: 1;
+}
+
+.class_0_polygon {
+  stroke: #000;
+  fill: #000;
+  stroke-width: 1;
+}

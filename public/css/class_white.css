@@ -1,0 +1,11 @@
+.class_white {
+  stroke: #fff;
+  fill: #fff;
+  stroke-width: 1;
+}
+
+.class_default {
+  stroke: #000;
+  stroke-width: 1;
+  fill: none;
+}

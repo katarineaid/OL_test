@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const print = require('../config/config_1981b1ae-3b5a-11e9-a220-005056bb60f0.json');
+const print = require('../../config/print.json');
 
 const features = print.geojsonObject.features;
 
@@ -134,4 +134,4 @@ function Point(geometry) {
 }
 
 run();
-fs.writeFileSync(__dirname + '/../config/' + 'tt_config_1981b1ae-3b5a-11e9-a220-005056bb60f0' + '.json', JSON.stringify(print));
+fs.writeFileSync(__dirname + '/../../config/' + 'tt_print' + '.json', JSON.stringify(print));
