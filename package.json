@@ -35,7 +35,7 @@
     "uglifyjs-webpack-plugin": "^0.4.6",
     "uuid": "^3.3.2",
     "webpack": "^4.29.5",
-    "webpack-dev-server": "^2.11.3"
+    "webpack-dev-server": "^3.1.11"
   },
   "devDependencies": {
     "ol": "^5.3.1",
